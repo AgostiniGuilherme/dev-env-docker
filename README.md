@@ -1,6 +1,20 @@
-# Ambiente de Desenvolvimento com Docker
+# Ambiente de Desenvolvimento Portátil com Docker
 
-Este repositório fornece um ambiente de desenvolvimento portátil usando Docker para Node.js, React e Python.
+Este repositório ambiente de desenvolvimento full stack portátil com Docker, pronto para rodar Node.js, React e Python de qualquer lugar. 
+
+Ideal para testes, protótipos e desenvolvimento em máquinas sem dependências instaladas.
+
+
+## 🔧 Tecnologias disponíveis
+
+- ✅ Node.js 18
+- ✅ Python 3.10
+- ✅ React (via Vite)
+- ✅ Hot reload (frontend)
+- ✅ Ambiente isolado via Docker Compose
+
+---
+
 
 ## Como usar
 
@@ -17,49 +31,12 @@ docker compose up -d
 
 3. Acesse o contêiner desejado:
 ```bash
-docker compose exec node bash
-docker compose exec frontend bash
-docker compose exec python bash
+docker compose exec node bash         # Terminal Node.js
+docker compose exec frontend bash     # Terminal React (frontend)
+docker compose exec python bash       # Terminal Python
 ```
 
 Agora você pode desenvolver livremente em qualquer máquina com Docker instalado.
-
-
-# Ambiente de Desenvolvimento com Docker
-
-Este repositório fornece um ambiente de desenvolvimento completo e portátil usando Docker, com suporte a **Node.js**, **React** e **Python**, pronto para rodar em qualquer máquina — mesmo que não tenha dependências de desenvolvimento instaladas.
-
-## 🔧 Tecnologias disponíveis
-
-- ✅ Node.js 18
-- ✅ Python 3.10
-- ✅ React (via Vite)
-- ✅ Hot reload (frontend)
-- ✅ Ambiente isolado via Docker Compose
-
----
-
-## 🚀 Como usar
-
-> Pré-requisitos: [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e em execução (modo Linux no Windows).
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/AgostiniGuilherme/dev-env-docker.git
-cd dev-env
-```
-
-2. Inicie os contêineres:
-```bash
-docker compose up -d
-```
-
-3. Acesse o contêiner desejado:
-```bash
-docker compose exec node bash         # Terminal Node.js
-docker compose exec frontend bash     # Terminal Frontend (React)
-docker compose exec python bash       # Terminal Python
-```
 
 ---
 
@@ -87,5 +64,5 @@ fullstack-dev-env/
 
 ## ✨ Créditos
 
-Este projeto foi idealizado e desenvolvido por **Guilherme Agostini** para possibilitar um ambiente de desenvolvimento completo, portátil e independente de configurações locais. Uma solução simples, poderosa e prática para codar de qualquer lugar.
+Este projeto foi idealizado e desenvolvido por **Guilherme Agostini** para oferecer um ambiente de desenvolvimento completo, portátil e independente de configurações locais. Uma solução simples, prática e poederosa para codar de qualquer lugar.
 
