@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  node:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./node:/app
+    ports:
+      - "3001:3001"
+    tty: true
+    stdin_open: true
+    command: bash
+
+  frontend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    tty: true
+    stdin_open: true
+    command: bash
+
+  python:
+    image: python:3.10
+    working_dir: /app
+    volumes:
+      - ./python:/app
+    ports:
+      - "5000:5000"
+    tty: true
+    stdin_open: true
+    command: bash
